@@ -8,7 +8,7 @@ class LoginPage extends React.Component{
 
   render(){
     return( 
-      <div>
+      <div className="ui container">
         <h1>Login Page</h1>
         <LoginForm submit={this.submit}>
           <p>hello</p>
