@@ -1,10 +1,14 @@
-import { USER_LOGGED_IN } from "../types";
+import { USER_LOGGED_IN, USER_LOGGED_OUT } from "../types";
 
-export default user = (state = {}, action = {}) => {
-  switch(action.type){
+const user = (state = {}, action = {}) => {
+  switch (action.type) {
     case USER_LOGGED_IN:
-      return action.user
+      return action.user;
+    case USER_LOGGED_OUT:
+      return {};
     default:
-      return state
+      return state;
   }
-}
+};
+
+export default user;
